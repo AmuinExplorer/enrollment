@@ -11,7 +11,6 @@
         * {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
-            font-style: normal;
         }
     </style>
 </head>
@@ -21,6 +20,7 @@
         <% data.forEach(function(item) { %>
             <li>
                 <h3><a href="/delete?id=<%= item._id %>">Delete Document</a></h3>
+                <h4><a href="/">Back</a></h3>
                 <strong>Track:</strong> <%= item.track %><br>
                 <strong>Strand:</strong> <%= item.strand %><br>
                 <strong>LRN:</strong> <%= item.lrn %><br>
