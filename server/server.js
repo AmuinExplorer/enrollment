@@ -12,7 +12,7 @@ app.set('views', path.join(__dirname, '../views')); // Use path.join for cross-p
 
 // MONGO DB CONNECTION
 // Connection URI - Replace with your MongoDB connection URI
-const uri = process.env.MONGODB_URI || 'mongodb+srv://amuinharniel:iOAFA6o9vAFL1Ddt@blog.vi6xnkk.mongodb.net/?retryWrites=true&w=majority&appName=Blog'; // Use environment variable or local MongoDB URI
+const uri = process.env.MONGODB_URI; // Use environment variable or local MongoDB URI
 
 // Database Name
 const dbName = 'portal';
