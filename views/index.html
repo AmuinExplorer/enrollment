@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior High School Enrollment Portal</title>
+</head>
+<body>
+<div style="background-color:LightBlue;width:500px;border:1px solid black;padding:15px;">
+    <h1 style="color:DodgerBlue;">Senior High School Enrollment Portal</h1> 
+    <form action="/upload" method="POST">
+        <label for="track">Grade Level to Enroll:</label>
+        <select id="Track" name="track" required>
+            <option value="">Select Grade Level</option>
+            <option value="Grade 11">Grade 11</option>
+            <option value="Grade 12">Grade 12</option>
+        </select><br><br>
+        <label for="strand">Preferred Strand:</label>
+        <select id="Strand" name="strand" required>
+            <option value="">Select Strand</option>
+            <option value="STEM">STEM</option>
+            <option value="ABM">ABM</option>
+            <option value="TVL">TVL</option>
+            <option value="MARITIME">MARITIME</option>
+        </select><br><br>
+        <label for="lrn">Learner Reference Number (LRN):</label>
+        <input type="text" id="LRN" name="lrn" required><br><br>
+        <label for="current_school">Current School Enrolled</label>
+        <input type="text" id="Current_school" name="current_school" required><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <h1 style="color:black">STUDENT INFORMATION</h1> 
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <!-- Student Name -->
+        <p>STUDENT NAME & DETAILS:</p>
+        <label for="last_name">Last name:</label>
+        <input type="text" id="Last_name" name="last_name" required><br><br>
+        <label for="first_name">First name:</label>
+        <input type="text" id="First_name" name="first_name" required><br><br>
+        <label for="middle_name">Middle name:</label>
+        <input type="text" id="Middle_name" name="middle_name"><br><br>
+        <label for="extension_name">Extension name:</label>
+        <input type="text" id="Extension_name" name="extension_name"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="Birthday" name="dob" required><br><br>
+        <label for="age">Age:</label>
+        <input type="text" id="Age" name="age"><br><br>
+        <!-- Gender -->
+        <label for="gender">Sex:</label>
+        <input type="radio" id="Male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="mother_tongue">Mother Tongue:</label>
+        <input type="text" id="Mother_tongue" name="mother_tongue" required><br><br>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="Contact" name="contact" required><br><br>
+        <label for="facebook">Facebook Account:</label>
+        <input type="email" id="Facebook" name="facebook" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="Email" name="email" required><br><br>
+        <label for="ps_hhid">4Ps Household ID Number:</label>
+        <input type="text" id="4ps_ID" name="ps_hhid"><br><br>
+        <label for="ip_community">Belonging to any Indigenous People (IP) Community/Indigenous Cultural Community:</label>
+        <select id="IP_community" name="ip_community" required>
+            <option value="">Select</option>
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
+        </select><br><br>
+        <label for="emergency_contact">Emergency Contact No.:</label>
+        <input type="text" id="Emergency_contact" name="emergency_contact" required><br><br>
+
+
+        <p>Is the child a Learner with disability</p>
+        <input type="radio" id="Disability" name="disability" value="yes" required>
+        <label for="disability_yes">YES</label>
+        <input type="radio" id="Disability" name="disability" value="no" required>
+        <label for="disability_no">NO</label><br><br>
+
+
+        <p>If yes, specify the type of disability:</p>
+        <input type="checkbox" id="Visual_impairment" name="disability[]" value="Visual Impairment">
+        <label for="visual_impairment">Visual Impairment</label><br>
+        <input type="checkbox" id="Blind" name="disability[]" value="Blind">
+        <label for="blind">Blind</label><br>
+        <input type="checkbox" id="Low_vision" name="disability[]" value="Low Vision">
+        <label for="low_vision">Low Vision</label><br>
+        <input type="checkbox" id="Hearing_impairment" name="disability[]" value="Hearing Impairment">
+        <label for="hearing_impairment">Hearing Impairment</label><br>
+        <input type="checkbox" id="Learning_disability" name="disability[]" value="Learning Disability">
+        <label for="learning_disability">Learning Disability</label><br>
+        <input type="checkbox" id="Intellectual_disability" name="disability[]" value="Intellectual Disability">
+        <label for="intellectual_disability">Intellectual Disability</label><br>
+        <input type="checkbox" id="Autism_spectrum_disorder" name="disability[]" value="Autism Spectrum Disorder">
+        <label for="autism_spectrum_disorder">Autism Spectrum Disorder</label><br>
+        <input type="checkbox" id="Emotional_behavioral_disorder" name="disability[]" value="Emotional-Behavioral Disorder">
+        <label for="emotional_behavioral_disorder">Emotional-Behavioral Disorder</label><br>
+        <input type="checkbox" id="Orthopedic" name="disability[]" value="Orthopedic">
+        <label for="orthopedic">Orthopedic</label><br>
+        <input type="checkbox" id="Speech_language_disorder" name="disability[]" value="Speech/Language Disorder">
+        <label for="speech_language_disorder">Speech/Language Disorder</label><br>
+        <input type="checkbox" id="Cerebral_palsy" name="disability[]" value="Cerebral Palsy">
+        <label for="cerebral_palsy">Cerebral Palsy</label><br>
+        <input type="checkbox" id="Chronic_disease" name="disability[]" value="Chronic Disease">
+        <label for="chronic_disease">Chronic Disease</label><br>
+        <input type="checkbox" id="Cancer" name="disability[]" value="Cancer">
+        <label for="cancer">Cancer</label><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+        
+        <!-- Address fields -->
+        <p>CURRENT ADDRESS</p>
+        <label for="province_current">Province:</label>
+        <input type="text" id="Province_current" name="province_curr" required><br><br>
+        <label for="city_curr">Municipality/City:</label>
+        <input type="text" id="City_current" name="city_curr" required><br><br>
+        <label for="barangay_curr">Barangay:</label>
+        <input type="text" id="Barangay_current" name="barangay_curr" required><br><br>
+        <label for="street_curr">House no. and street:</label>
+        <input type="text" id="Street_current" name="street_curr" required><br><br>
+        <label for="zip_code_curr">Zip Code:</label>
+        <input type="text" id="Zip_code_current" name="zip_code_curr" required><br><br><br>
+        <p>PERMANENT ADDRESS</p><br><br>
+        <label for="province_perm">Province:</label>
+        <input type="text" id="Province_permanent" name="province_perm" required><br><br>
+        <label for="city_perm">Municipality/City:</label>
+        <input type="text" id="City_permanent" name="city_perm" required><br><br>
+        <label for="barangay_perm">Barangay:</label>
+        <input type="text" id="Barangay_permanent" name="barangay_perm" required><br><br>
+        <label for="street_perm">House no. and street:</label>
+        <input type="text" id="Street_permanent" name="street_perm" required><br><br>
+        <label for="zip_code_perm">Zip Code:</label>
+        <input type="text" id="Zip_code_permanent" name="zip_code_perm" required><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <!-- Parent/Guardian information fields -->
+        <p>PARENT/GUARDIAN'S INFORMATION</p><br><br> 
+        <p3>Father's Name</p3><br><br>
+        <label for="father_last_name">Last Name:</label>
+        <input type="text" id="Father_last_name" name="father_last_name" required><br><br>
+        <label for="father_first_name">First Name:</label>
+        <input type="text" id="Father_first_name" name="father_first_name" required><br><br>
+        <label for="father_middle_name">Middle Name:</label>
+        <input type="text" id="Father_middle_name" name="father_middle_name" required><br><br>
+        <label for="father_contact">Contact Number:</label>
+        <input type="text" id="Father_contact" name="father_contact" required><br><br><br>
+        <p3>Mother's Maiden Name</p3><br><br>
+        <label for="mother_last_name">Last Name:</label>
+        <input type="text" id="Mother_last_name" name="mother_last_name" required><br><br>
+        <label for="mother_first_name">First Name:</label>
+        <input type="text" id="Mother_first_name" name="mother_first_name" required><br><br>
+        <label for="mother_middle_name">Middle Name:</label>
+        <input type="text" id="Mother_middle_name" name="mother_middle_name" required><br><br>
+        <label for="mother_contact">Contact Number:</label>
+        <input type="text" id="Mother_contact" name="mother_contact" required><br><br><br>
+        <p3>Legal Guardian's Name</p3><br><br>
+        <label for="guardian_last_name">Last Name:</label>
+        <input type="text" id="Guardian_last_name" name="guardian_last_name" required><br><br>
+        <label for="guardian_first_name">First Name:</label>
+        <input type="text" id="Guardian_first_name" name="guardian_first_name" required><br><br>
+        <label for="guardian_middle_name">Middle Name:</label>
+        <input type="text" id="Guardian_middle_name" name="guardian_middle_name" required><br><br>
+        <label for="guardian_contact">Contact Number:</label>
+        <input type="text" id="Guardian_contact" name="guardian_contact" required><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <!-- Returning Learner fields -->
+        <p>For Returning Learner (Balik-Aral) and Those Who will Transfer/Move In</p><br><br>
+        <label for="last_grade_completed">Last Grade Level Completed:</label>
+        <input type="text" id="Last_grade_completed" name="last_grade_completed" required><br><br>
+        <label for="last_school_attended">Last School Attended:</label>
+        <input type="text" id="Last_school_attended" name="last_school_attended" required><br><br>
+        <label for="last_school_year_completed">Last School Year Completed:</label>
+        <input type="text" id="Last_school_year_completed" name="last_school_year_completed" required><br><br>
+        <label for="school_id">School ID:</label>
+        <input type="text" id="School_id" name="school_id" required><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <!-- Senior High School fields -->
+        <p>For Learner's in Senior High School</p><br><br>
+        <p3>Semester</p3><br><br>
+        <input type="radio" id="Semester_1" name="semester" value="1st" required>
+        <label for="semester_1">1st</label>
+        <input type="radio" id="Semester_2" name="semester" value="2nd" required>
+        <label for="semester_2">2nd</label><br><br>
+        <label for="track_shs">Track:</label>
+        <input type="text" id="Track_SHS" name="track_shs" required><br><br>
+        <label for="strand_shs">Strand:</label>
+        <input type="text" id="Strand_SHS" name="strand_shs" required><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <!-- New Enrollment Policy -->
+        <p>NEW ENROLMENT POLICY FOR SENIOR HIGH SCHOOL</p>
+        <p>
+          Effective Date: <strong>January 29, 2024</strong> <br>
+          This policy outlines the enrolment procedures and fees for incoming Senior High
+          Eligibility:<br>
+          • JHS Public School Completers: Applicants who have successfully completed their Junior
+          High School education in a public school are eligible for free enrolment.<br>
+          • JHS Private School Completers: Applicants who have successfully completed their Junior High School education in a private school are eligible for enrolment but must pay a tuition fee of P3,500 per year provided they have ESC Voucher.<br>
+          Returnees:<br>
+          • Students who previously withdrew and wish to re-enrol are considered returnees.<br>
+          • Returnees must pay half of the regular tuition fee per semester, amounting to Php 8,750.<br>
+          Withdrawal Policy:<br>
+          • Once enrolled, students are expected to complete the academic year.<br>
+          • Withdrawals are only permitted for very valid reasons, such as documented medical conditions with proof or recommendation from a licensed physician.<br>
+          • Withdrawal fees will apply:<br>
+          • Php 500 processing fee for all withdrawals.
+          • Php 1,750 if withdrawing within the first day to one month after the first day of classes.<br>
+          • An additional P1,750 per succeeding month of attendance will be charged for withdrawals beyond the first month,
+          The creation of this policy is based on DepEd Order No. 88, s. 2010 (2010 Revised Manual of Regulations for Private Schools in Basic Education) Section 180. Tuition and other Student Fees.<br> Each private school shall determine its rate of tuition and other school fees or charges, The rates and charges adopted by schools pursuant to this provision shall be collectible, and their application or use authorized, subject to rules and regulations promulgated by the Department.<br><br>
+          By implementing this policy, Southwestern College of Maritime, Business and Technology Inc. aims to ensure fairess and transparency in the enrolment process and promote responsible student commitment to their academic pursuits.
+          By signing, we, the student and guardian fully understand and acknowledge this
+          policy.<br><br>
+        </p>
+        <p3>Signature Over Printed Name of Parent/Guardian</p3><br><br>
+        <label for="signature_file">Upload signature file:</label>
+        <input type="file" id="Signature_file" name="signature_file" accept=".pdf, .doc, .docx"><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions.</label><br />
+        <p>I hereby certify that the above information given is true and correct to the best of my knowledge and I allow the Department of Education to use my details to create and/or update his/her learner profile in the Learner Information System (LIS).</p>
+        <button type="submit">ENROLL</button>
+    </form>
+</div>
+
+</body>
+</html>

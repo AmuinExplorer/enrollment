@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Portal Data</title>
+</head>
+<body>
+    <h1>Enrollment Portal Data</h1>
+    <ul>
+        <% data.forEach(function(item) { %>
+            <li>
+                <strong>Track:</strong> <%= item.track %><br>
+                <strong>Strand:</strong> <%= item.strand %><br>
+                <strong>LRN:</strong> <%= item.lrn %><br>
+                <strong>Current School:</strong> <%= item.current_school %><br>
+                <strong>Last Name:</strong> <%= item.last_name %><br>
+                <strong>First Name:</strong> <%= item.first_name %><br>
+                <strong>Middle Name:</strong> <%= item.middle_name %><br>
+                <strong>Extension Name:</strong> <%= item.extension_name %><br>
+                <strong>Date of Birth:</strong> <%= item.dob %><br>
+                <strong>Age:</strong> <%= item.age %><br>
+                <strong>Gender:</strong> <%= item.gender %><br>
+                <strong>Mother Tongue:</strong> <%= item.mother_tongue %><br>
+                <strong>Contact:</strong> <%= item.contact %><br>
+                <strong>Facebook:</strong> <%= item.facebook %><br>
+                <strong>Email:</strong> <%= item.email %><br>
+                <strong>PS HHID:</strong> <%= item.ps_hhid %><br>
+                <strong>IP Community:</strong> <%= item.ip_community %><br>
+                <strong>Emergency Contact:</strong> <%= item.emergency_contact %><br>
+                <strong>Disability:</strong> <%= item.disability %><br>
+                <strong>Province (Current):</strong> <%= item.province_curr %><br>
+                <strong>City (Current):</strong> <%= item.city_curr %><br>
+                <strong>Barangay (Current):</strong> <%= item.barangay_curr %><br>
+                <strong>Street (Current):</strong> <%= item.street_curr %><br>
+                <strong>Zip Code (Current):</strong> <%= item.zip_code_curr %><br>
+                <strong>Province (Permanent):</strong> <%= item.province_perm %><br>
+                <strong>City (Permanent):</strong> <%= item.city_perm %><br>
+                <strong>Barangay (Permanent):</strong> <%= item.barangay_perm %><br>
+                <strong>Street (Permanent):</strong> <%= item.street_perm %><br>
+                <strong>Zip Code (Permanent):</strong> <%= item.zip_code_perm %><br>
+                <strong>Father's Last Name:</strong> <%= item.father_last_name %><br>
+                <strong>Father's First Name:</strong> <%= item.father_first_name %><br>
+                <strong>Father's Middle Name:</strong> <%= item.father_middle_name %><br>
+                <strong>Father's Contact:</strong> <%= item.father_contact %><br>
+                <strong>Mother's Last Name:</strong> <%= item.mother_last_name %><br>
+                <strong>Mother's First Name:</strong> <%= item.mother_first_name %><br>
+                <strong>Mother's Middle Name:</strong> <%= item.mother_middle_name %><br>
+                <strong>Mother's Contact:</strong> <%= item.mother_contact %><br>
+                <strong>Guardian's Last Name:</strong> <%= item.guardian_last_name %><br>
+                <strong>Guardian's First Name:</strong> <%= item.guardian_first_name %><br>
+                <strong>Guardian's Middle Name:</strong> <%= item.guardian_middle_name %><br>
+                <strong>Guardian's Contact:</strong> <%= item.guardian_contact %><br>
+                <strong>Last Grade Completed:</strong> <%= item.last_grade_completed %><br>
+                <strong>Last School Attended:</strong> <%= item.last_school_attended %><br>
+                <strong>Last School Year Completed:</strong> <%= item.last_school_year_completed %><br>
+                <strong>School ID:</strong> <%= item.school_id %><br>
+                <strong>Semester:</strong> <%= item.semester %><br>
+                <strong>Track (SHS):</strong> <%= item.track_shs %><br>
+                <strong>Strand (SHS):</strong> <%= item.strand_shs %><br>
+                <strong>Signature File:</strong> <%= item.signature_file %><br>
+                <strong>Terms:</strong> <%= item.terms %><br>
+            </li>
+            <br />
+            <br />
+        <% }); %>
+    </ul>
+</body>
+</html>
